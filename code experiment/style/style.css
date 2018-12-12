@@ -1,0 +1,63 @@
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    perspective: 800px;
+    background-color: black;
+    overflow: hidden;
+}
+canvas{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 800px;
+}
+img{
+    position: absolute;
+    /* transform: scale(0.8) */
+    height: 200px;
+    width: 300px;
+}
+.img_wrapper{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 800px;
+    transform: translatey(60px)
+}
+
+.one{
+    transform: translatey(220px) translatex(440px) translateZ(-s110px) rotateX(-4deg) rotatey(16deg)
+}
+.two{
+    transform:translatey(-400px) translatex(370px) translateZ(30px) rotateX(4deg) rotatey(3deg)
+}
+.three{
+    transform:translatey(-20px) translatex(80px) translateZ(292px) rotateX(-5deg) rotatey(15deg)
+}
+.four{
+    transform:translatey(60px) translatex(-650px) translateZ(165px) rotateX(-5deg) rotatey(-4deg)
+}
+.five{
+    transform:translatey(-550px) translatex(80px) translateZ(250px) rotateX(10deg) rotatey(1deg)
+}
+.six{
+    transform:translatey(-360px) translatex(-630px) translateZ(215px) rotateX(7deg) rotatey(-8deg)
+}
+.seven{
+    transform:translatey(180px) translatex(-450px) translateZ(65px) rotateX(-9deg) rotatey(-5deg)
+}
+.eight{
+    transform:translatey(-380px) translatex(-445px) translateZ(65px) rotateX(7deg) rotatey(-5deg)
+}
