@@ -52,12 +52,20 @@ body {
     cursor: pointer;
     color: #545151;
 }
+.positionTrick{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
 .currentPart {
     font-size: 45pt;
     font-family: 'Merriweather';
     font-weight: lighter;
-    margin-left: 30%;
-    color: #545151
+    color: #545151;
+    position: absolute;
+    margin: 0;
 }
 .menuEnd {
     width: 100%;
