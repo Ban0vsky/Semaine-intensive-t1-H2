@@ -1,0 +1,211 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+/* OVERLAY / BACKGROUND */
+.background {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: #B3E3EF;
+    position: absolute;
+    z-index: -5000;
+}
+.menu {
+    height: 90px;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.progressionBar {
+    width: 3px;
+    height: 410px;
+    position: fixed;
+    border-radius: 5%;
+    background-color: white;
+    margin-left: 80px;
+    margin-top: 30%;
+    overflow: hidden;
+}
+.achieved {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #625656;
+    transform-origin: 0 0;
+    will-change: transform;
+    transform: scaleY(0);
+    transition: all 0.5s ease 0s;
+}
+.home {
+    font-size: 24pt;
+    font-family: 'Merriweather', serif;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    cursor: pointer;
+    color: #545151;
+}
+.currentPart {
+    font-size: 45pt;
+    font-family: 'Merriweather';
+    font-weight: lighter;
+    margin-left: 30%;
+    color: #545151
+}
+.menuEnd {
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    background-color: #545151;
+    margin-top: 40px;
+}
+
+/* KNOW MORE POPUP */
+.more.moreSelected {
+    opacity: 1;
+    z-index: 9999;
+}
+.knowMore {
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+    position: fixed;
+    margin-left: 85%;
+    margin-top: 10%;
+}
+.moreQuit {
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+    position: absolute;
+    margin-left: 85%;
+    margin-top: 10%;
+    z-index: 3500;
+}
+.more {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.4s;
+    z-index: -9999;
+}
+.moreBackground {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.9;
+    z-index: 3000;
+    position: absolute
+}
+.bigText {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    z-index: 3500;
+    position: absolute;
+    font-size: 25px;
+    width: 550px;
+    margin-left: 300px;
+    margin-top: 150px;
+}
+.illuGraph {
+    position: absolute;
+    z-index: 3500;
+    margin-left: 60%;
+    margin-top: 15%;
+}
+/* CURRENT SLIDE */
+.currentSlide {
+    padding: 0;
+    width: 100%;
+    height: 100vh
+}
+.currentTitle {
+    font-size: 45pt;
+    font-family: 'Merriweather';
+    font-weight: bolder;
+    color: #545151;
+    margin-left: 10%;
+    margin-top: 10%;
+    position: absolute;
+    z-index: -5;
+}
+.currentInfo {
+    font-size: 40pt;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    color: #545151;
+    width: 830px;
+    position: absolute;
+    margin-left: 305px;
+    margin-top: 375px;
+    z-index: -5;
+}
+.illustrationParallax {
+    position: absolute;
+    z-index: -1000;
+    margin-left: 55%;
+    margin-top: 23%;
+    opacity: 0.46;
+}
+.baseLayer {
+    transform: scale(1.5)
+}
+.topLayer {
+    transform: scale(1.5) translatex(15px) translatey(-130px);
+    z-index: 300;
+}
+
+/* CURRENT SLIDE 2 */
+.backgroundTwo {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: #B3E3EF;
+    position: absolute;
+    z-index: -5000;
+}
+.currentSlideTwo {
+    width: 100%;
+    height: 100vh;
+}
+
+/* CURRENT SLIDE 3 */
+.backgroundThree {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: #B3E3EF;
+    position: absolute;
+    z-index: -5000;
+}
+.currentSlideThree {
+    width: 100%;
+    height: 100vh;
+}
+
+/* TEXT ANIMATION */
+.text {
+    opacity: 1;
+}
+.text.textPop {
+    animation: textPop 1s ease 0s;
+}
+@keyframes textPop {
+    from {
+        opacity: 0;
+        transform: translateX(-80px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px); 
+    }
+}
