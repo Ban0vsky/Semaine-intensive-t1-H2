@@ -491,3 +491,40 @@ body {
     right: 43%;
     opacity: 0.3;
 }
+
+
+/* TWELFTH SLIDE */
+
+.twelfthIllu{
+    transform: scale(3);
+    right: 43%;
+    opacity: 0.3;
+}
+
+.twelfthInfo{
+   right: 25%;
+   font-size: 18pt;
+   top: -5%;
+   text-align: center;
+}
+.currentTitle.twelfthTitle{
+    top:0%;
+    font-size: 21pt;
+    right: 26%;
+    width: 800px;
+    text-align: center
+}
+
+.twelfthInfoSassy{
+   right: 25%;
+   font-size: 22pt;
+   top: 30%;
+   text-align: center;
+}
+
+.twelfthPoint{
+    top: 40%;
+    font-size: 25pt;
+    right: 40%;
+    text-align: center
+}
