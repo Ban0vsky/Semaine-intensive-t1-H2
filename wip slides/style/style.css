@@ -137,16 +137,19 @@ body {
 .currentSlide {
     padding: 0;
     width: 100%;
-    height: 100%
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .currentTitle {
     font-size: 45pt;
     font-family: 'Merriweather';
     font-weight: bolder;
     color: #e6e6e6;
-    margin-left: 10%;
-    margin-top: 10%;
-    position: absolute;
+    /* margin-left: 10%;
+    margin-top: 10%; */
+    /* position: absolute; */
     z-index: -5;
 }
 
@@ -158,9 +161,9 @@ body {
     font-weight: 200;
     color: #e6e6e6;
     width: 830px;
-    position: absolute;
-    margin-left: 45%;
-    margin-top: 375px;
+    /* position: absolute; */
+    /* margin-left: 45%;
+    margin-top: 375px; */
     z-index: -5;
 }
 
@@ -233,10 +236,8 @@ body {
 
 
 .currentInfo.firstInfo{
-    top: -9%;
-    right: 10%;
-    font-size: 27pt;
-    text-align: center;
+    font-size: 24pt;
+    /* text-align: center; */
     width: 830px;
 }
 
@@ -247,24 +248,24 @@ body {
 }
 
 .currentTitle.firstTitle{
-    margin-top: 7%;
     font-size: 40pt;
-    margin-left: 25%;
 }
 
+.twOne{
+    margin-left: 35%;
+}
 
 /* SECOND SLIDE STYLING */
 
 
 .secondIllu{
+    position: absolute;
     right:20%;
     margin-top: 5%;
 }
 
 .currentTitle.secondTitle{
-    margin-top: 15%;
     font-size: 40pt;
-    left: 5%;
 }
 .secondBase{
     transform: scale(0.5);
@@ -277,18 +278,21 @@ body {
 .thirdIllu{
     right:55%;
     margin-top: 5%;
-    opacity: 1;
+    opacity: 0.5;
 }
 
 .currentTitle.thirdTitle{
-    margin-top: 15%;
     font-size: 40pt;
-    left: 5%;
 }
 .thirdBase{
     transform: scale(0.8);
 }
 
+.twThree{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* fourth SLIDE STYLING */
 
 
@@ -299,16 +303,16 @@ body {
 }
 
 .currentTitle.fourthTitle{
-    top: 60%;
     font-size: 18pt;
-    left: 18%;
     /* text-align: center */
     /* width: 900px; */
+    margin-top: 10%;
+    text-align: center;
 }
 
 .fourthInfo{
     font-size: 15pt;
-    width: 550px;
+    width: 500px;
     font-family: 'Roboto', sans-serif;
     font-weight: 200;
     color: #e6e6e6;
@@ -318,11 +322,8 @@ body {
 }
 
 .comparisonEnterprise{
-    top: 14%;
-    width: 550px;
+    width: 500px;
     height: 450px;
-    margin-left: 8%;
-    margin-right: 15px;
     border-radius: 5%;
     background-color:#226072;
     z-index: -6;
@@ -341,7 +342,7 @@ body {
 
 .comparisonStartup{
     top: 14%;
-    width: 550px;
+    width: 500px;
     height: 450px;
     border-radius: 5%;
     background-color:#226072;
@@ -353,12 +354,10 @@ body {
 }
 
 .comparisonWrapper{
-    width: 1200px;
-    position: absolute;
+    width: 1050px;
     display: flex;
     flex-direction: row;
-    right: 15%;
-    top: 20%
+    justify-content: space-between;
 }
 
 
@@ -369,8 +368,8 @@ body {
     top: -15%
 }
 .fifthTitle{
-    left: 10%;
-    top: 25%
+    /* left: 10%;
+    top: 25% */
 }
 
 /* SIXTHSLIDE */
@@ -379,12 +378,13 @@ body {
     opacity: 0.4;
     top: -60%;
     right: 17%;
+    position: absolute;
 }
 
 .currentTitle.sixthTitle{
-    margin-top: 10%;
+    /* margin-top: 10%; */
     font-size: 25pt;
-    right: 24%;
+    /* right: 24%; */
     text-align: center
 }
 .sixthBase{
@@ -392,18 +392,25 @@ body {
 }
 
 .currentInfo.sixthInfo{
-    top: 9%;
-    left: -16%;
+    /* top: 9%; */
+    margin-left: 10%;
     font-size: 27pt;
     text-align: center;
     width: 830px;
 }
 
 .points{
-    top: 15%;
+    /* top: 15%; */
     font-size: 25pt;
-    right: 40%;
-    text-align: center
+    /* right: 40%; */
+    text-align: center;
+}
+
+.twSix{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
 }
 
 /* SEVENTHSLIDE */
@@ -412,8 +419,8 @@ body {
 .seventhIllu{
     transform: scale(0.5);
     opacity: 0.3;
-    top: -75%;
-    right: 18%;
+    /* top: -75%;
+    right: 18%; */
 }
 
 /* eight slide */
@@ -426,21 +433,21 @@ body {
 }
 
 .eightInfo{
+    margin-left: 10%;
     font-size: 22pt;
-    top: 9%;
-    right: 28%;
     text-align: center;
+    width: 830px;
 }
 
 /* NINETHSLIDE */
  .ninethPoint{
-    right:45%
+    /* right:45% */
  }
 
  .ninethInfo{
-     right: 25%;
+     /* right: 25%; */
      font-size: 22pt;
-     top: 9%;
+     /* top: 9%; */
      text-align: center;
  }
 
@@ -461,29 +468,29 @@ body {
  }
 
  .tenthInfo{
-    right: 25%;
+    /* right: 25%; */
     font-size: 22pt;
-    top: -10%;
+    /* top: -10%; */
     text-align: center;
 }
 .tenthTitle{
-    right: 26%;
-    top: 32%;
+    /* right: 26%;
+    top: 32%; */
 }
 
 .tenthInfoSassy{
-    right: 25%;
+    /* right: 25%; */
     font-size: 22pt;
-    top: 30%;
+    /* top: 30%; */
     text-align: center;
 }
 
 /* ELEVENTH SLIDE */
 
 .eleventhTitle{
-    margin-top: 20%;
+    /* margin-top: 20%; */
     font-size: 40pt;
-    right: 33%;
+    /* right: 33%; */
 }
 
 .eleventhIllu{
@@ -502,29 +509,29 @@ body {
 }
 
 .twelfthInfo{
-   right: 25%;
+   /* right: 25%; */
    font-size: 18pt;
-   top: -5%;
+   /* top: -5%; */
    text-align: center;
 }
 .currentTitle.twelfthTitle{
-    top:0%;
+    /* top:0%; */
     font-size: 21pt;
-    right: 26%;
+    /* right: 26%; */
     width: 800px;
     text-align: center
 }
 
 .twelfthInfoSassy{
-   right: 25%;
+   /* right: 25%; */
    font-size: 22pt;
-   top: 30%;
+   /* top: 30%; */
    text-align: center;
 }
 
 .twelfthPoint{
-    top: 40%;
+    /* top: 40%; */
     font-size: 25pt;
-    right: 40%;
+    /* right: 40%; */
     text-align: center
 }

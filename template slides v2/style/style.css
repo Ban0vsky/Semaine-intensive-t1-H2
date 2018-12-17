@@ -1,8 +1,8 @@
 body {
     padding: 0;
     margin: 0;
-    height: 100vh;
-    width: 100vw;
+    /* height: 100vh;
+    width: 100vw; */
     overflow: hidden;
 }
 
@@ -201,6 +201,19 @@ body {
     height: 100vh;
 }
 
+/* CURRENT SLIDE 4 */
+.backgroundFour {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: #B3E3EF;
+    position: absolute;
+    z-index: -5000;
+}
+.currentSlideFour {
+    width: 100%;
+    height: 100vh;
+}
 /* TEXT ANIMATION */
 .text {
     opacity: 1;
