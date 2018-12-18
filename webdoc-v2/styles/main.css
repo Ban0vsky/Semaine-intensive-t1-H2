@@ -7,14 +7,34 @@ body {
 }
 
 /* OVERLAY / BACKGROUND */
-.background {
+.backgroundFirst {
     height: 100%;
     width: 100%;
     display: flex;
-    background-color: #1D5464;
-    position: absolute;
+    background-color: #FFCC86;
+    position: fixed;
     z-index: -5000;
 }
+.backgroundSecond {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: #62B497;
+    position: fixed;
+    z-index: -5000;
+    opacity: 0;
+}
+.backgroundThird {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: #6CB4B7;
+    position: fixed;
+    z-index: -5000;
+    opacity: 0;
+}
+
+
 
 .menu {
     height: 90px;
@@ -22,7 +42,81 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
-    background-color: #164958;
+}
+
+.menuBackgroundFirst{
+   height: 90px;
+   position: fixed;
+   width: 150%;
+    background-color: #E5982C;
+    -webkit-box-shadow: 3px 12px 14px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 12px 14px -5px rgba(0,0,0,0.75);
+    box-shadow: 3px 12px 14px -5px rgba(0,0,0,0.75);
+    opacity: 0;
+    left: -5%;
+    transition-property: opacity;
+    transition-duration: 0.4s;
+}
+
+.menuBackgroundSecond{
+    height: 90px;
+    position: fixed;
+    width: 150%;
+     background-color: #067E53;
+     -webkit-box-shadow: 3px 12px 14px -5px rgba(0,0,0,0.75);
+     -moz-box-shadow: 3px 12px 14px -5px rgba(0,0,0,0.75);
+     box-shadow: 3px 12px 14px -5px rgba(0,0,0,0.75);
+     opacity: 0;
+     left: -5%;
+    transition-property: opacity;
+    transition-duration: 0.4s;
+ }
+
+ .menuBackgroundThird{
+    height: 90px;
+    position: fixed;
+    width: 150%;
+     background-color: #187377;
+     -webkit-box-shadow: 3px 12px 14px -5px rgba(0,0,0,0.75);
+     -moz-box-shadow: 3px 12px 14px -5px rgba(0,0,0,0.75);
+     box-shadow: 3px 12px 14px -5px rgba(0,0,0,0.75);
+     opacity: 0;
+     left: -5%;
+    transition-property: opacity;
+    transition-duration: 0.4s;
+ }
+
+.sideColorFirst{
+    position: fixed;
+    height: 100%;
+    width: 65px;
+    left: 0%;
+    background-color: #FFBA5A;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.4s;
+}
+
+.sideColorSecond{
+    position: fixed;
+    height: 100%;
+    width: 65px;
+    left: 0%;
+    background-color: #399B78;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.4s;
+}
+
+.sideColorThird{
+    position: fixed;
+    height: 100%;
+    width: 65px;
+    left: 0%;
+    background-color:#3F999D;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.4s;
 }
 
 .progressionBar {
@@ -31,7 +125,7 @@ body {
     position: fixed;
     border-radius: 5%;
     background-color: white;
-    margin-left: 80px;
+    margin-left: 30px;
     margin-top: 30%;
     overflow: hidden;
 }
@@ -55,7 +149,7 @@ body {
     margin-left: 2%;
     margin-bottom: 2%;
     cursor: pointer;
-    color: #e6e6e6;
+    color: white;
     z-index: 5;
 }
 
@@ -71,7 +165,7 @@ body {
     font-size: 45pt;
     font-family: 'Merriweather';
     font-weight: lighter;
-    color: #e6e6e6;
+    color: #8E6246;
     position: absolute;
     margin: 0;
 }
@@ -80,7 +174,7 @@ body {
     width: 100%;
     height: 2px;
     position: absolute;
-    background-color: #e6e6e6;
+    background-color: #8E6246;
     margin-top: 40px;
 }
 
@@ -104,8 +198,8 @@ body {
     width: 80px;
     cursor: pointer;
     position: absolute;
-    margin-left: 85%;
-    margin-top: 10%;
+    right: 2%;
+    bottom: 2%;
     z-index: 3500;
 }
 
@@ -117,6 +211,9 @@ body {
     transition-property: opacity;
     transition-duration: 0.4s;
     z-index: -9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .moreBackground {
@@ -125,25 +222,26 @@ body {
     background-color: black;
     opacity: 0.9;
     z-index: 3000;
-    position: absolute
+    position: absolute;
+}
+
+.knowMoreInfo{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .bigText {
     color: white;
     font-family: 'Roboto', sans-serif;
     z-index: 3500;
-    position: absolute;
     font-size: 25px;
-    width: 550px;
-    margin-left: 300px;
-    margin-top: 150px;
+    width: 800px;
 }
 
 .illuGraph {
-    position: absolute;
     z-index: 3500;
-    margin-left: 60%;
-    margin-top: 15%;
 }
 
 /* CURRENT SLIDE */
@@ -155,13 +253,14 @@ body {
     position: relative;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .currentTitle {
     font-size: 45pt;
     font-family: 'Merriweather';
     font-weight: bolder;
-    color: #e6e6e6;
+    color: #8E6246;
     /* margin-left: 10%;
     margin-top: 10%; */
     /* position: absolute; */
@@ -174,7 +273,7 @@ body {
     font-size: 40pt;
     font-family: 'Roboto', sans-serif;
     font-weight: 200;
-    color: #e6e6e6;
+    color: #8E6246;
     width: 830px;
     /* position: absolute; */
     /* margin-left: 45%;
@@ -311,6 +410,7 @@ body {
 }
 
 .twThree {
+    margin-left: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -338,7 +438,7 @@ body {
     width: 500px;
     font-family: 'Roboto', sans-serif;
     font-weight: 200;
-    color: #e6e6e6;
+    color: #8E6246;
     position: absolute;
     z-index: -5;
     /* margin-left: 20px;  */
@@ -346,9 +446,9 @@ body {
 
 .comparisonEnterprise {
     width: 500px;
-    height: 450px;
+    height: 400px;
     border-radius: 5%;
-    background-color: #226072;
+    background-color: #FFBF65;
     z-index: -6;
     text-align: center;
     -webkit-box-shadow: -11px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -358,7 +458,7 @@ body {
 
 .comparisonH {
     font-family: 'roboto';
-    color: #e6e6e6;
+    color: #8E6246;
     /* margin-left: 36%;
     margin-top: 5%; */
 }
@@ -366,9 +466,9 @@ body {
 .comparisonStartup {
     top: 14%;
     width: 500px;
-    height: 450px;
+    height: 400px;
     border-radius: 5%;
-    background-color: #226072;
+    background-color: #FFBF65;
     z-index: -6;
     text-align: center;
     -webkit-box-shadow: -11px 10px 5px 0px rgba(0, 0, 0, 0.75);
@@ -401,7 +501,7 @@ body {
     transform: scale(0.5);
     opacity: 0.4;
     top: -60%;
-    right: 17%;
+    right: -20%;
     position: absolute;
 }
 
@@ -444,8 +544,8 @@ body {
 .seventhIllu {
     transform: scale(0.5);
     opacity: 0.3;
-    /* top: -75%;
-    right: 18%; */
+    /* top: -75%; */
+    right: 18%;
 }
 
 /* eight slide */
@@ -453,8 +553,8 @@ body {
 .eightIllu {
     transform: scale(0.5);
     opacity: 0.3;
-    top: -75%;
-    right: 0%;
+    top: -64%;
+    right: -45%;
 }
 
 .eightInfo {
@@ -478,9 +578,9 @@ body {
 
 .ninethIllu {
     transform: scale(1);
-    opacity: 0.3;
-    top: -75%;
-    right: 0%;
+    opacity: 1;
+    top: -44%;
+    right: 27%;
 }
 
 /* TENTH SLIDE */
@@ -488,8 +588,9 @@ body {
 
 .tenthIllu {
     transform: scale(3);
-    right: 43%;
+    right: 45%;
     opacity: 0.3;
+    top: 5%;
 }
 
 .tenthInfo {
@@ -520,9 +621,10 @@ body {
 }
 
 .eleventhIllu {
-    transform: scale(3);
+    transform: scale(4);
     right: 43%;
     opacity: 0.3;
+    top:0;
 }
 
 
@@ -532,6 +634,7 @@ body {
     transform: scale(3);
     right: 43%;
     opacity: 0.3;
+    top: 0;
 }
 
 .twelfthInfo {
@@ -687,6 +790,18 @@ body {
     text-align: center;
 }
 
+.goal{
+    opacity: 0.2;
+    transform: scale(3);
+    left: 40%;
+    top:0%
+}
+
+.failure{
+    opacity:0.1;
+    top:0; 
+    transform: scale(3)
+}
 /********************* FIX *************************/
 .menu, .knowMore {
     z-index: 999;
@@ -749,12 +864,12 @@ body {
     transition: all 0.2s ease;
 }
 .navMenuOpen {
-    height: 80px;
-    width: 80px;
+    height: 50px;
+    width: 50px;
     cursor: pointer;
     position: fixed;
     right: 2%;
-    top: 12%;
+    top: 2%;
     z-index: 500;
 }
 /* .navMenuQuit {
@@ -766,3 +881,10 @@ body {
     margin-top: 14%;
     z-index: 3500;
 } */
+
+
+
+
+.isActive{
+    opacity: 1;
+}
