@@ -635,6 +635,10 @@ body {
     /* position: absolute; */
 }
 
+.fourteenthGraph{
+    margin-right: 10%;
+}
+
 .fourteenthInfo{
     /* right: 25%; */
     font-size: 18pt;
@@ -650,3 +654,9 @@ body {
  .twFourteen{
      margin-top: 5%;
  }
+
+ .twentyfirstTitle{
+    width: 800px;
+    text-align: center;
+}
+
