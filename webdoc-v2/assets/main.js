@@ -1,3 +1,18 @@
+// Pour les animations
+
+// function titleShow() {
+//     let text = document.querySelectorAll('.span');
+//     let p = window.pageYOffset + window.innerHeight;
+//     let q = window.pageYOffset + window.innerHeight * 2;
+
+//     for (let i = 0; i < text.length; i++) {
+//         if (p < text[i].offsetTop && text[i].offsetTop < q) {
+//             // text[i].style.opacity = 1;
+//             text[i].classList.add('textPop');
+//         };
+//     };
+// };
+
 // Fullpage management
 
 let isComplete = true;
@@ -47,6 +62,7 @@ function wheel(e) {
                 
                 arrivePoint = arrivePoint > maxBottom ? maxBottom : arrivePoint;
                 setAnimation(arrivePoint);
+                // titleShow();
             };
         }
         // -- For Firefox
@@ -63,6 +79,7 @@ function wheel(e) {
                 
                 arrivePoint = arrivePoint > maxBottom ? maxBottom : arrivePoint;
                 setAnimation(arrivePoint);
+                // titleShow();
             };
         };
     };
