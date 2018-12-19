@@ -86,6 +86,19 @@ let achievedProgressBar = document.querySelector('.achieved');
 // Manage menu background change
 let menu = document.querySelector('.menu');
 
+// Manage background change
+let sideColorFirst = document.querySelector('.sideColorFirst');
+let sideColorSecond = document.querySelector('.sideColorSecond');
+let sideColorThird = document.querySelector('.sideColorThird');
+
+let menuBackgroundFirst = document.querySelector('.menuBackgroundFirst');
+let menuBackgroundSecond = document.querySelector('.menuBackgroundSecond');
+let menuBackgroundThird = document.querySelector('.menuBackgroundThird');
+
+let backgroundFirst = document.querySelector('.backgroundFirst');
+let backgroundSecond = document.querySelector('.backgroundSecond');
+let backgroundThird = document.querySelector('.backgroundThird');
+
 const emptyBar = () => {
     achievedProgressBar.style.transform = 'scaleY(0)';    
 }; document.addEventListener('click', emptyBar, false);
@@ -128,6 +141,18 @@ function activeSlideOne(e) {
         });
         // Manage progress bar
         achievedProgressBar.style.transform = 'scaleY(0)'; 
+        
+        menuBackgroundFirst.classList.add('isActive');  
+        sideColorFirst.classList.add('isActive');
+        backgroundFirst.classList.add('isActive');
+        
+        menuBackgroundSecond.classList.remove('isActive');  
+        sideColorSecond.classList.remove('isActive');
+        backgroundSecond.classList.remove('isActive');
+        
+        menuBackgroundThird.classList.remove('isActive');  
+        sideColorThird.classList.remove('isActive');
+        backgroundThird.classList.remove('isActive');
     };
 }; document.addEventListener('mouseover', activeSlideOne, false); 
 
@@ -166,7 +191,19 @@ function activeSlideTwo(e) {
         quitMoreTwo.addEventListener('click', () => {
             selectedTwo.classList.remove('moreSelected');
         });
-        achievedProgressBar.style.transform = 'scaleY(0.02)';    
+        achievedProgressBar.style.transform = 'scaleY(0.02)';  
+        
+        menuBackgroundFirst.classList.add('isActive');  
+        sideColorFirst.classList.add('isActive');
+        backgroundFirst.classList.add('isActive');
+        
+        menuBackgroundSecond.classList.remove('isActive');  
+        sideColorSecond.classList.remove('isActive');
+        backgroundSecond.classList.remove('isActive');
+        
+        menuBackgroundThird.classList.remove('isActive');  
+        sideColorThird.classList.remove('isActive');
+        backgroundThird.classList.remove('isActive');
     };
 }; document.addEventListener('mouseover', activeSlideTwo, false);
 
@@ -245,6 +282,18 @@ function activeSlideFour(e) {
             selectedFour.classList.remove('moreSelected');
         });
         achievedProgressBar.style.transform = 'scaleY(0.08)';
+        
+        menuBackgroundFirst.classList.add('isActive');  
+        sideColorFirst.classList.add('isActive');
+        backgroundFirst.classList.add('isActive');
+        
+        menuBackgroundSecond.classList.remove('isActive');  
+        sideColorSecond.classList.remove('isActive');
+        backgroundSecond.classList.remove('isActive');
+        
+        menuBackgroundThird.classList.remove('isActive');  
+        sideColorThird.classList.remove('isActive');
+        backgroundThird.classList.remove('isActive');
     };
 }; document.addEventListener('mouseover', activeSlideFour, false);
 
@@ -284,6 +333,18 @@ function activeSlideFive(e) {
             selectedFive.classList.remove('moreSelected');
         });
         achievedProgressBar.style.transform = 'scaleY(0.12)';
+        
+        menuBackgroundSecond.classList.add('isActive');  
+        sideColorSecond.classList.add('isActive');
+        backgroundSecond.classList.add('isActive'); 
+        
+        menuBackgroundFirst.classList.remove('isActive');  
+        sideColorFirst.classList.remove('isActive');
+        backgroundFirst.classList.remove('isActive');
+        
+        menuBackgroundThird.classList.remove('isActive');  
+        sideColorThird.classList.remove('isActive');
+        backgroundThird.classList.remove('isActive');
     };
 }; document.addEventListener('mouseover', activeSlideFive, false);
 
@@ -479,7 +540,19 @@ function activeSlideTen(e) {
         quitMoreTen.addEventListener('click', () => {
             selectedTen.classList.remove('moreSelected');
         });
-        achievedProgressBar.style.transform = 'scaleY(0.40)';    
+        achievedProgressBar.style.transform = 'scaleY(0.40)'; 
+        
+        menuBackgroundSecond.classList.add('isActive');  
+        sideColorSecond.classList.add('isActive');
+        backgroundSecond.classList.add('isActive'); 
+        
+        menuBackgroundFirst.classList.remove('isActive');  
+        sideColorFirst.classList.remove('isActive');
+        backgroundFirst.classList.remove('isActive');
+        
+        menuBackgroundThird.classList.remove('isActive');  
+        sideColorThird.classList.remove('isActive');
+        backgroundThird.classList.remove('isActive');   
     };
 }; document.addEventListener('mouseover', activeSlideTen, false);
 
@@ -518,7 +591,19 @@ function activeSlideEleven(e) {
         quitMoreEleven.addEventListener('click', () => {
             selectedEleven.classList.remove('moreSelected');
         });
-        achievedProgressBar.style.transform = 'scaleY(0.46)';    
+        achievedProgressBar.style.transform = 'scaleY(0.46)';   
+        
+        menuBackgroundThird.classList.add('isActive');  
+        sideColorThird.classList.add('isActive');
+        backgroundThird.classList.add('isActive');
+        
+        menuBackgroundFirst.classList.remove('isActive');  
+        sideColorFirst.classList.remove('isActive');
+        backgroundFirst.classList.remove('isActive');
+        
+        menuBackgroundSecond.classList.remove('isActive');  
+        sideColorSecond.classList.remove('isActive');
+        backgroundSecond.classList.remove('isActive');
     };
 }; document.addEventListener('mouseover', activeSlideEleven, false);
 
@@ -636,7 +721,19 @@ function activeSlideFourteen(e) {
         quitMoreFourteen.addEventListener('click', () => {
             selectedFourteen.classList.remove('moreSelected');
         });
-        achievedProgressBar.style.transform = 'scaleY(0.60)';    
+        achievedProgressBar.style.transform = 'scaleY(0.60)';
+        
+        menuBackgroundThird.classList.add('isActive');  
+        sideColorThird.classList.add('isActive');
+        backgroundThird.classList.add('isActive');
+        
+        menuBackgroundFirst.classList.remove('isActive');  
+        sideColorFirst.classList.remove('isActive');
+        backgroundFirst.classList.remove('isActive');
+        
+        menuBackgroundSecond.classList.remove('isActive');  
+        sideColorSecond.classList.remove('isActive');
+        backgroundSecond.classList.remove('isActive');
     };
 }; document.addEventListener('mouseover', activeSlideFourteen, false);
 
@@ -676,6 +773,18 @@ function activeSlideFiveteen(e) {
             selectedFiveteen.classList.remove('moreSelected');
         });
         achievedProgressBar.style.transform = 'scaleY(0.64)';    
+        
+        menuBackgroundFirst.classList.add('isActive');  
+        sideColorFirst.classList.add('isActive');
+        backgroundFirst.classList.add('isActive');
+        
+        menuBackgroundSecond.classList.remove('isActive');  
+        sideColorSecond.classList.remove('isActive');
+        backgroundSecond.classList.remove('isActive');
+        
+        menuBackgroundThird.classList.remove('isActive');  
+        sideColorThird.classList.remove('isActive');
+        backgroundThird.classList.remove('isActive');
     };
 }; document.addEventListener('mouseover', activeSlideFiveteen, false);
 
@@ -793,6 +902,18 @@ function activeSlideHeighteen(e) {
             selectedHeighteen.classList.remove('moreSelected');
         });
         achievedProgressBar.style.transform = 'scaleY(0.84)';    
+        
+        menuBackgroundFirst.classList.add('isActive');  
+        sideColorFirst.classList.add('isActive');
+        backgroundFirst.classList.add('isActive');
+        
+        menuBackgroundSecond.classList.remove('isActive');  
+        sideColorSecond.classList.remove('isActive');
+        backgroundSecond.classList.remove('isActive');
+        
+        menuBackgroundThird.classList.remove('isActive');  
+        sideColorThird.classList.remove('isActive');
+        backgroundThird.classList.remove('isActive');
     };
 }; document.addEventListener('mouseover', activeSlideHeighteen, false);
 
@@ -832,6 +953,18 @@ function activeSlideNineteen(e) {
             selectedNineteen.classList.remove('moreSelected');
         });
         achievedProgressBar.style.transform = 'scaleY(0.89)';    
+        
+        menuBackgroundSecond.classList.add('isActive');  
+        sideColorSecond.classList.add('isActive');
+        backgroundSecond.classList.add('isActive'); 
+        
+        menuBackgroundFirst.classList.remove('isActive');  
+        sideColorFirst.classList.remove('isActive');
+        backgroundFirst.classList.remove('isActive');
+        
+        menuBackgroundThird.classList.remove('isActive');  
+        sideColorThird.classList.remove('isActive');
+        backgroundThird.classList.remove('isActive');   
     };
 }; document.addEventListener('mouseover', activeSlideNineteen, false);
 
@@ -870,7 +1003,19 @@ function activeSlideTwenty(e) {
         quitMoreTwenty.addEventListener('click', () => {
             selectedTwenty.classList.remove('moreSelected');
         });
-        achievedProgressBar.style.transform = 'scaleY(0.92)';    
+        achievedProgressBar.style.transform = 'scaleY(0.92)';  
+        
+        menuBackgroundSecond.classList.add('isActive');  
+        sideColorSecond.classList.add('isActive');
+        backgroundSecond.classList.add('isActive'); 
+        
+        menuBackgroundFirst.classList.remove('isActive');  
+        sideColorFirst.classList.remove('isActive');
+        backgroundFirst.classList.remove('isActive');
+        
+        menuBackgroundThird.classList.remove('isActive');  
+        sideColorThird.classList.remove('isActive');
+        backgroundThird.classList.remove('isActive');   
     };
 }; document.addEventListener('mouseover', activeSlideTwenty, false);
 
@@ -910,6 +1055,18 @@ function activeSlideTwentyOne(e) {
             selectedTwentyOne.classList.remove('moreSelected');
         });
         achievedProgressBar.style.transform = 'scaleY(0.94)';    
+        
+        menuBackgroundThird.classList.add('isActive');  
+        sideColorThird.classList.add('isActive');
+        backgroundThird.classList.add('isActive');
+        
+        menuBackgroundFirst.classList.remove('isActive');  
+        sideColorFirst.classList.remove('isActive');
+        backgroundFirst.classList.remove('isActive');
+        
+        menuBackgroundSecond.classList.remove('isActive');  
+        sideColorSecond.classList.remove('isActive');
+        backgroundSecond.classList.remove('isActive');
     };
 }; document.addEventListener('mouseover', activeSlideTwentyOne, false);
 
