@@ -7,6 +7,7 @@ body {
 }
 
 /* OVERLAY / BACKGROUND */
+
 .backgroundFirst {
     height: 100%;
     width: 100%;
@@ -191,6 +192,7 @@ body {
     position: fixed;
     right: 2%;
     bottom: 2%;
+    opacity: 1;
 }
 
 .moreQuit {
@@ -789,7 +791,7 @@ body {
     width: 800px;
     text-align: center;
 }
-
+/* STYLING TOOLS */
 .goal{
     opacity: 0.2;
     transform: scale(3);
@@ -802,6 +804,19 @@ body {
     top:0; 
     transform: scale(3)
 }
+
+.secondTextColor{
+    color:#F8F89C
+}
+
+.thirdTextColor{
+    color:#FDFDFD;
+}
+
+.knowMoreHidden{
+    opacity:0;
+}
+
 /********************* FIX *************************/
 .menu, .knowMore {
     z-index: 999;
