@@ -915,7 +915,7 @@ body {
 }   
 /* Launch button */
 /* LAUNCH BUTTON */
-p {
+.scrollContent {
     margin-left: -55px;
 }
 
