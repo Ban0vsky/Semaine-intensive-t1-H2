@@ -1,5 +1,3 @@
-// Pour les animations
-
 // function titleShow() {
 //     let text = document.querySelectorAll('.span');
 //     let p = window.pageYOffset + window.innerHeight;

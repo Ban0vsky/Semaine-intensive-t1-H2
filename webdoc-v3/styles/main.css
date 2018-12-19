@@ -987,3 +987,17 @@ p {
     border-radius: 50%;
     animation: ani-mouse 2.5s linear infinite;
 }
+/* Disclaimer */
+.disclaimer {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+}
+.disclaimer p {
+    width: 700px;
+    font-size: 18pt;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
