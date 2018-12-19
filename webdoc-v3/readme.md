@@ -1,9 +1,7 @@
-Webdoc Projet V2
+Webdoc Projet V3
 
-Changements par rapport à la V1 :
+Changements par rapport à la V2 :
 
-Fix des backgrounds
-Fix des typos
-Fix de l'agencement texte / images 
-Ajout des logos
-Ajout du contenu des know more
+Fix du responsive et autres bug si il y en a
+Design des learn mores
+Tout ce qu'on peut faire en plus : animations etc ...
