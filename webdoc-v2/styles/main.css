@@ -881,10 +881,12 @@ body {
     margin-top: 14%;
     z-index: 3500;
 } */
-
-
-
-
 .isActive{
     opacity: 1;
 }
+.currentTitle {
+    font-family: 'Montserrat',sans-serif;
+}
+.currentInfo, .points {
+    font-family: 'Ralway', sans-serif;
+}   

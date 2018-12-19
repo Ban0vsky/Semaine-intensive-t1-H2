@@ -110,7 +110,7 @@ function activeSlideOne(e) {
     if (slideOne === x) {
         // Manage know more
         more.addEventListener('click', () => {
-            selectedOne.classList.add('moreSelected');
+            // selectedOne.classList.add('moreSelected');
             
             selectedTwo.classList.remove('moreSelected');
             selectedThree.classList.remove('moreSelected');
@@ -162,7 +162,7 @@ function activeSlideTwo(e) {
     
     if (slideTwo === x) {
         more.addEventListener('click', () => {
-            selectedTwo.classList.add('moreSelected');
+            // selectedTwo.classList.add('moreSelected');
             
             selectedOne.classList.remove('moreSelected');
             selectedThree.classList.remove('moreSelected');
@@ -252,7 +252,7 @@ function activeSlideFour(e) {
     
     if (slideFour === x) {
         more.addEventListener('click', () => {
-            selectedFour.classList.add('moreSelected');
+            // selectedFour.classList.add('moreSelected');
             
             selectedOne.classList.remove('moreSelected');
             selectedTwo.classList.remove('moreSelected');
@@ -303,7 +303,7 @@ function activeSlideFive(e) {
     
     if (slideFive === x) {
         more.addEventListener('click', () => {
-            selectedFive.classList.add('moreSelected');
+            // selectedFive.classList.add('moreSelected');
             
             selectedOne.classList.remove('moreSelected');
             selectedTwo.classList.remove('moreSelected');
@@ -562,7 +562,7 @@ function activeSlideEleven(e) {
     
     if (slideEleven === x) {
         more.addEventListener('click', () => {
-            selectedEleven.classList.add('moreSelected');
+            // selectedEleven.classList.add('moreSelected');
             
             selectedOne.classList.remove('moreSelected');
             selectedTwo.classList.remove('moreSelected');
@@ -743,7 +743,7 @@ function activeSlideFiveteen(e) {
     
     if (slideFiveteen === x) {
         more.addEventListener('click', () => {
-            selectedFiveteen.classList.add('moreSelected');
+            // selectedFiveteen.classList.add('moreSelected');
             
             selectedOne.classList.remove('moreSelected');
             selectedTwo.classList.remove('moreSelected');
@@ -923,7 +923,7 @@ function activeSlideNineteen(e) {
     
     if (slideNineteen === x) {
         more.addEventListener('click', () => {
-            selectedNineteen.classList.add('moreSelected');
+            // selectedNineteen.classList.add('moreSelected');
             
             selectedOne.classList.remove('moreSelected');
             selectedTwo.classList.remove('moreSelected');
@@ -1025,7 +1025,7 @@ function activeSlideTwentyOne(e) {
     
     if (slideTwentyOne === x) {
         more.addEventListener('click', () => {
-            selectedTwentyOne.classList.add('moreSelected');
+            // selectedTwentyOne.classList.add('moreSelected');
             
             selectedOne.classList.remove('moreSelected');
             selectedTwo.classList.remove('moreSelected');
@@ -1154,7 +1154,7 @@ function activeSlideTwentyFour(e) {
     
     if (slideTwentyFour === x) {
         more.addEventListener('click', () => {
-            selectedTwentyFour.classList.add('moreSelected');
+            // selectedTwentyFour.classList.add('moreSelected');
             
             selectedOne.classList.remove('moreSelected');
             selectedTwo.classList.remove('moreSelected');
