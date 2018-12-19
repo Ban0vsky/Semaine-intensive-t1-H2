@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: index.html
+Disallow: /assets/main.js
+Disallow: /assets/parallax.js
+Disallow: /assets/interaction.js
+Disallow: /styles/main.css
+Disallow: readme.md
+Disallow: /images
+
+
