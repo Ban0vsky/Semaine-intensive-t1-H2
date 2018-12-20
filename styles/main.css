@@ -6,6 +6,88 @@ body {
     overflow: hidden;
 }
 
+
+
+/* BACKGROUND ANIMATION */
+.backAnimation{
+    position: absolute;
+    height: 100%;
+    width:100%;
+    z-index:2998;
+}
+
+.backAnimationBase{
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    top: 65%;
+    bottom: 0%;
+    left: 65%;
+    right: 0%;
+    animation: backHoverOne 7s ease-out infinite
+}
+
+.backAnimationTop{
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    top: 67%;
+    bottom: 0%;
+    left: 67%;
+    right: 0%;
+    -webkit-box-shadow: 1px 0px 22px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 0px 22px 3px rgba(0,0,0,0.75);
+    box-shadow: 1px 0px 22px 3px rgba(0,0,0,0.75);
+    will-change: transform;
+    animation: backHoverOne 5s ease-out infinite
+}
+
+.babFirst{
+    background-color:#ff9900 ;
+}
+.batFirst{
+    background-color: #260d0d;
+}
+
+
+.babSecond{
+    background-color:#006600;
+}
+.batSecond{
+    background-color:#260d0d;
+}
+
+.babThird{
+    background-color: #3333ff;
+}
+.batThird{
+    background-color: #260d0d;
+}
+@keyframes backHoverOne{
+    0% {
+
+        transform: translateX(0%) translatey(0%) rotate(135deg);
+    }
+    50% {
+        transform: translateX(2%) translatey(2%) rotate(135deg);
+    }
+    100%{
+        transform: translateX(0%) translatey(0%) rotate(135deg);
+    }
+}
+
+@keyframes backHoverTwo{
+    0% {
+
+        transform: translateX(0%) translatey(0%) rotate(135deg);
+    }
+    50% {
+        transform: translateX(-1%) translatey(-1%) rotate(135deg);
+    }
+    100%{
+        transform: translateX(0%) translatey(0%) rotate(135deg);
+    }
+}
 /* OVERLAY / BACKGROUND */
 
 .backgroundFirst {
@@ -193,6 +275,7 @@ body {
     right: 2%;
     bottom: 2%;
     opacity: 1;
+    z-index: 2999;
 }
 .knowMore.hideKnowMore {
     visibility: hidden;
